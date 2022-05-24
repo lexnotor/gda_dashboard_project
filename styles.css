@@ -1,4 +1,30 @@
-.mdi {
-    color: blue;
-    font-size: 100px;
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+div#top_container {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 150px auto;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+}
+
+#side_bar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: rgb(25, 146, 212);
+}
+#header_bar {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: white;
+}
+#my_body {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: rgb(226, 232, 240);
 }
