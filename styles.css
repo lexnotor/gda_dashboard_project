@@ -1,8 +1,23 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("ressources/fonts/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("ressources/fonts/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("ressources/fonts/Roboto-MediumItalic.ttf");
+    font-style: italic;
+}
 body, html {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
+    font-family: "Roboto", sans-serif;
 }
 div#top_container {
     display: grid;
@@ -21,6 +36,16 @@ div#top_container {
     padding-top: 10px;
     padding-left: 15px;
 }
+/* Ajout css side_bar*/
+#size_board {
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+#size_others {
+    padding: 10px;
+}
+/* Ajout css Header */
 #header_bar {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -48,9 +73,7 @@ div#top_container {
     justify-content: space-between;
     align-items: center;
 }
-#header_bar span {
-    /* vertical-align: 20px; */
-}
+
 #header_bar span.cloche {
     font-size: x-large;
 }
@@ -100,17 +123,42 @@ div#top_container {
 } 
 #shotcut_nav > span:last-of-type {
     margin: 0px 0px;
-} 
+}
+
+/* Ajout css my_body */
 #my_body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-color: rgb(226, 232, 240);
+    display: grid;
+    grid-template-columns: 70% 20%;
+    justify-content: space-around;
 }
-/* Ajout css side_bar*/
-#size_board{
-    font-size: 25px;
-    padding-bottom: 40px;
+/* Le travail de Jospin, commence ici */
+#my_body #your_projects {
+    grid-column: 1 / 2;
 }
-#size_others{
+
+/* La suite c'est pour Alexandre */
+#my_body #information {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 250px 250px;
+    row-gap: 10px;
+}
+#my_body #announcement {
+    grid-row: 1 / 2;
+}
+#my_body #announcement_content {
     padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+#my_body #trending {
+    grid-row: 2 / 3;
+}
+#my_body #trending_content {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
 }
