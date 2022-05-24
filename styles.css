@@ -22,7 +22,82 @@ div#top_container {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     background-color: white;
+    margin: 15px 30px 0px 30px;
 }
+#header_bar .mdi-magnify {
+    font-size: 20px;
+}
+#header_bar #input_search {
+    padding: 7px;
+    background-color: rgb(226, 232, 240);
+    border: none;
+    border-radius: 14px;
+    width: 70%;
+}
+#header_bar #hearder_user_bar {
+    display: grid;
+    grid-template-columns: 70% 25%;
+    justify-content: space-between;
+}
+#header_bar #noctification {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    align-items: center;
+}
+#header_bar span {
+    /* vertical-align: 20px; */
+}
+#header_bar span.cloche {
+    font-size: x-large;
+}
+#header_bar span.nom_larger {
+    font-size: large;
+}
+#header_bar .small_avatar {
+    width: 50px;
+}
+#header_bar #hearder_shotcut_bar {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    justify-content: space-between;
+}
+
+#header_bar #welcome_profil {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: start;
+}
+#welcome_profil > span:first-of-type {
+    font-size: small;
+    font-weight: bolder;
+}
+#welcome_profil > span:last-of-type {
+    font-size: x-large;
+    font-weight: bolder;
+}
+#header_bar .meddium_avatar {
+    grid-row: 1 / 3;
+    width: 60px;
+    margin-right: 20px;
+}
+#header_bar #shotcut_nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: end;
+    align-items:flex-end;
+}
+#shotcut_nav > span {
+    padding: 10px 20px;
+    margin: 0px 10px;
+    background-color: rgb(25, 146, 212);
+    color: white;
+    border-radius: 20px;
+} 
+#shotcut_nav > span:last-of-type {
+    margin: 0px 0px;
+} 
 #my_body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
