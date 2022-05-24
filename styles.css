@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Roboto";
-    src: url("ressources/fonts/Roboto-Medium.ttf");
+    src: url("ressources/fonts/Roboto-Regular.ttf");
 }
 @font-face {
     font-family: "Roboto";
@@ -9,7 +9,7 @@
 }
 @font-face {
     font-family: "Roboto";
-    src: url("ressources/fonts/Roboto-MediumItalic.ttf");
+    src: url("ressources/fonts/Roboto-Italic.ttf");
     font-style: italic;
 }
 body, html {
@@ -19,9 +19,13 @@ body, html {
     padding: 0px;
     font-family: "Roboto", sans-serif;
 }
+hr {
+    border: 1px solid rgba(99, 99, 99, 0.435);
+    border-top: 0px;
+}
 div#top_container {
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: minmax(17%, 220px) auto;
     grid-template-rows: 150px auto;
     padding: 0px;
     margin: 0px;
@@ -35,6 +39,8 @@ div#top_container {
     color: #fff;
     padding-top: 10px;
     padding-left: 15px;
+    box-shadow: 1px 0px 2px rgb(212, 212, 212);
+    z-index: 10;
 }
 /* Ajout css side_bar*/
 #size_board {
@@ -50,7 +56,9 @@ div#top_container {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     background-color: white;
-    margin: 15px 30px 0px 30px;
+    padding: 15px 30px 0px 30px;
+    box-shadow: 0px 1px 2px rgb(212, 212, 212);;
+    z-index: 9;
 }
 #header_bar .mdi-magnify {
     font-size: 20px;
@@ -131,7 +139,7 @@ div#top_container {
     grid-row: 2 / 3;
     background-color: rgb(226, 232, 240);
     display: grid;
-    grid-template-columns: 70% 20%;
+    grid-template-columns: 65% 25%;
     justify-content: space-around;
 }
 /* Le travail de Jospin, commence ici */
@@ -143,7 +151,7 @@ div#top_container {
 #my_body #information {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: 250px 250px;
+    grid-template-rows: repeat(2, minmax(100px, auto));
     row-gap: 10px;
 }
 #my_body #announcement {
@@ -153,6 +161,18 @@ div#top_container {
     padding: 10px;
     border-radius: 5px;
     background-color: #fff;
+    padding: 25px;
+}
+#my_body .annonce {
+    margin: 13px 0px;
+}
+.annonce > h4 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+.annonce > p {
+    color: rgb(99, 99, 99);
+    margin: 0px;
 }
 #my_body #trending {
     grid-row: 2 / 3;
@@ -161,4 +181,21 @@ div#top_container {
     padding: 10px;
     border-radius: 5px;
     background-color: #fff;
+}
+.tendance {
+    display: grid;
+    grid-auto-columns: minmax(40px, auto);
+    justify-content: start;
+    align-items: center;
+    column-gap: 15px;
+}
+.tendance > img {
+    width: 50px;
+    grid-column: 1 / 2;
+}
+.tendance > p {
+    grid-column: 2 / 3;
+}
+.tendance > p > span:last-of-type {
+    color: rgb(99, 99, 99);
 }
