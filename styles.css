@@ -154,7 +154,7 @@ div#top_container {
 #my_body #your_projects {
     grid-column: 1 / 2;
 }
-.parent{
+#parent{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
@@ -202,13 +202,13 @@ div#top_container {
     border-radius: 10px;
     padding: 10px;
 }
-#box-style{
+h3{
     font-weight: bold;
 }
-#text-opacity{
+.text-opacity{
     opacity: 0.7;
 }
-#span{
+.image-icon{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
