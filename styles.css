@@ -45,6 +45,9 @@ div#top_container {
 #size_others {
     padding: 10px;
 }
+#space{
+    padding-top: 40px;
+}
 /* Ajout css Header */
 #header_bar {
     grid-column: 2 / 3;
@@ -137,6 +140,69 @@ div#top_container {
 /* Le travail de Jospin, commence ici */
 #my_body #your_projects {
     grid-column: 1 / 2;
+}
+.parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+#box-child-1{
+    border: solid 1px white;
+    border-left: solid 10px yellowgreen;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+#box-child-2{
+    border: solid 1px white;
+    border-left: solid 10px yellowgreen;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+#box-child-3{
+    border: solid 1px white;
+    border-left: solid 10px yellowgreen;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+#box-child-4{
+    border: solid 1px white;
+    border-left: solid 10px yellowgreen;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+#box-child-5{
+    border: solid 1px white;
+    border-left: solid 10px yellowgreen;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+#box-child-6{
+    border: solid 1px white;
+    border-left: solid 10px yellowgreen;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+#box-style{
+    font-weight: bold;
+}
+#text-opacity{
+    opacity: 0.7;
+}
+#span{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+    font-size: 20px;
+    padding-top: 20px;
+    gap: 25px
 }
 
 /* La suite c'est pour Alexandre */
