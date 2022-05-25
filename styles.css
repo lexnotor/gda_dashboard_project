@@ -150,7 +150,7 @@ div#top_container {
     justify-content: space-around;
     padding-bottom: 30px;
 }
-/* Le travail de Jospin, commence ici */
+/* La partie sur Your Projects*/
 #my_body #your_projects {
     grid-column: 1 / 2;
 }
@@ -218,7 +218,7 @@ div#top_container {
     gap: 25px
 }
 
-/* La suite c'est pour Alexandre */
+/* La Partie sur Announcement et Trending */
 #my_body #information {
     grid-column: 2 / 3;
     display: grid;
