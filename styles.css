@@ -33,6 +33,9 @@ div#top_container {
 }
 
 #side_bar {
+    position: sticky;
+    top: 0px;
+    height: 100vh;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     background-color: rgb(25, 146, 212);
