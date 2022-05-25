@@ -10,12 +10,184 @@
 </head>
 <body>
     <div id="top_container">
-        <aside id="side_bar"></aside>
-        <header id="header_bar"></header>
+        <aside id="side_bar">
+            <div class="mdi mdi-view-dashboard" id="size_board"> Dashboard </div >
+            <div  class="mdi mdi-home" id="size_others"> Home </div >
+            <div  class="mdi mdi-card-account-mail" id="size_others"> Profile </div >
+            <div  class="mdi mdi-message-reply" id="size_others"> Message </div >
+            <div  class="mdi mdi-clock-time-three" id="size_others"> History </div >
+            <div  class="mdi mdi-note-multiple" id="size_others"> Tasks </div >
+            <div  class="mdi mdi-account-group" id="size_others">  Communities</div >
+            <div id="space">
+                <div  class="mdi mdi-cog" id="size_others"> Settings </div >
+                <div  class="mdi mdi-help-box" id="size_others"> Support </div >
+                <div  class="mdi mdi-shield-check" id="size_others"> Privacy </div>
+            </div>
+        </aside>
+       
+        <header id="header_bar">
+            <div id="hearder_user_bar">
+                <div id="search_bar">
+                    <span class="mdi mdi-magnify"></span>
+                    <input type="text" name="input_search" id="input_search">
+                </div>
+                <div id="noctification">
+                    <span class="mdi mdi-bell-ring-outline cloche"></span>
+                    <img src="ressources/avatar.png" alt="" class="small_avatar">
+                    <span class="nom_larger">Morgan Oakley</span>
+                </div>
+            </div>
+            <div id="hearder_shotcut_bar">
+                <div id="welcome_profil">
+                    <img src="ressources/avatar.png" alt="" class="meddium_avatar">
+                    <span>Hi there</span>
+                    <span>Morgan Oakley (@morgan)</span>
+                </div>
+                <div id="shotcut_nav">
+                    <span>New</span>
+                    <span>Upload</span>
+                    <span>Share</span>
+                </div>
+            </div>
+        </header>
+
         <section id="my_body">
-            <article id="your_projects"></article>
-            <article id="announcements"></article>
-            <article id="trending"></article>
+            <article id="your_projects">
+                <h1>Your Projects</h1>
+                <div  class="parent">
+                    <div id="box-child-1">
+                        <span id="box-style">Super cool projects</span><br>
+                        <span id="text-opacity">
+                            Sed tempus ut lacus ut scelerisque.
+                            Suspendisse sollicitudin nibh erat, id facilisis felis accumsa nec.
+                        </span>
+                        <div id="span">
+                            <span class="mdi mdi-star-plus-outline"></span>
+                            <span class="mdi mdi-eye-plus"></span>
+                            <span class="mdi mdi-share-variant-outline"></span>
+                        </div>
+                    </div>
+                    <div id="box-child-2">
+                        <span id="box-style">Less cross project</span><br>
+                        <span id="text-opacity">
+                            Nullam condimentum ipdum ut veicula consectetur.
+                            Quisque sed dolor tincidunt, consectetur sapien et, facilis dolor.
+                            Duis sem purus, dignissim ut sepien in, varuis pellentesque lacus
+                        </span>
+                        <div id="span">
+                            <span class="mdi mdi-star-plus-outline"></span>
+                            <span class="mdi mdi-eye-plus"></span>
+                            <span class="mdi mdi-share-variant-outline"></span>
+                        </div>
+                    </div>
+                    <div id="box-child-3">
+                        <span id="box-style">Impossible App</span><br>
+                        <span id="text-opacity">
+                            In hac habitasse platea dictumst.
+                            Vivamus dictum ructrum arcu, a placerat sagittis id.
+                        </span>
+                        <div id="span">
+                            <span class="mdi mdi-star-plus-outline"></span>
+                            <span class="mdi mdi-eye-plus"></span>
+                            <span class="mdi mdi-share-variant-outline"></span>
+                        </div>
+                    </div>
+                    <div id="box-child-4">
+                        <span id="box-style">Easy Peasy App</span><br>
+                        <span id="text-opacity">
+                            Etiam cursus eros ac efficitur fringilla.
+                            Vestibulum dignissim urna eget accumsan aliquam.
+                            curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.
+                        </span>
+                        <div id="span">
+                            <span class="mdi mdi-star-plus-outline"></span>
+                            <span class="mdi mdi-eye-plus"></span>
+                            <span class="mdi mdi-share-variant-outline"></span>
+                        </div>
+                    </div>
+                    <div id="box-child-5">
+                        <span id="box-style">Ad Blocker</span><br>
+                        <span id="text-opacity">
+                            Quisque rget rutrum nisi.
+                            Nam augue justo, cursus vitae metus vel, pharetra henderit felis.
+                            Aliquam sed malesuanda eros.
+                        </span>
+                        <div id="span">
+                            <span class="mdi mdi-star-plus-outline"></span>
+                            <span class="mdi mdi-eye-plus"></span>
+                            <span class="mdi mdi-share-variant-outline"></span>
+                        </div>
+                    </div>
+                    <div id="box-child-6">
+                        <span id="box-style">Money Maker</span><br>
+                        <span id="text-opacity">
+                            Praesent convallis, libero quis congue
+                            elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex.
+                            pellentesque mollis nec sem vel aliquam.
+                        </span>
+                        <div id="span">
+                            <span class="mdi mdi-star-plus-outline"></span>
+                            <span class="mdi mdi-eye-plus"></span>
+                            <span class="mdi mdi-share-variant-outline"></span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <aside id="information">
+                <article id="announcement">
+                    <h1>Announcements</h1>
+                    <div id="announcement_content">
+                        <div class="annonce">
+                            <h4>Site Maintenance</h4>
+                            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue</p>
+                        </div>
+                        <hr>
+                        <div class="annonce">
+                            <h4>Community Share Day</h4>
+                            <p>Na vel lectus tincidunt, rutrum nulla eu, ornre libero. Aliquam dictim accumsan porttitor...</p>
+                        </div>
+                        <hr>
+                        <div class="annonce">
+                            <h4>Updated Privacy Policy</h4>
+                            <p>Phasellus effecitur nisi eget elit consectetur eget condimentum ante autor. Cras fringilla sagittis sem in mattis...</p>
+                        </div>
+                    </div>
+                </article>
+                <article id="trending">
+                    <h1>Trending</h1>
+                    <div id="trending_content">
+                        <div class="tendance">
+                            <img src="ressources/avatar.png" alt="" srcset="">
+                            <p>
+                                <span>@tegan</span><br>
+                                <span>World Peace Builder</span>
+                            </p>
+                        </div>
+                        <div class="tendance">
+                            <img src="ressources/avatar.png" alt="" srcset="">
+                            <p>
+                                <span>@morgan</span><br>
+                                <span>Super Cool Project</span>
+                            </p>
+                        </div>
+                        <div class="tendance">
+                            <img src="ressources/avatar.png" alt="" srcset="">
+                            <p>
+                                <span>@kendall</span><br>
+                                <span>Life Changing App</span>
+                            </p>
+                        </div>
+                        <div class="tendance">
+                            <img src="ressources/avatar.png" alt="" srcset="">
+                            <p>
+                                <span>@alex</span><br>
+                                <span>No Traffic Maker</span>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </aside>
+
         </section>
     </div>
 </body>
