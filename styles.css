@@ -55,6 +55,8 @@ div#top_container {
 }
 /* Ajout css Header */
 #header_bar {
+    position: sticky;
+    top: 0px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     background-color: white;
