@@ -1,0 +1,44 @@
+
+#header_bar #input_search {
+    padding: 7px;
+    background-color: rgb(226, 232, 240);
+    border: none;
+    border-radius: 14px;
+}
+#header_bar span.nom_larger {
+    font-size: medium;
+}
+
+#welcome_profil>span:last-of-type {
+    font-size: larger;
+}
+
+/* Arrangement de #my_body */
+#my_body {
+    grid-template-columns: 90%;
+    justify-content: center;
+}
+
+/* La partie sur Your Projects*/
+#my_body #your_projects {
+    grid-column: 1 / 2;
+}
+
+
+/* La Partie sur Announcement et Trending */
+#my_body #information {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+#my_body #announcement {
+    grid-row: 1 / 2;
+}
+
+
+#my_body #trending {
+    grid-row: 1 / 2;
+}
