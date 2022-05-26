@@ -43,15 +43,18 @@ div#top_container {
     padding-left: 15px;
     box-shadow: 1px 0px 2px rgb(212, 212, 212);
     z-index: 10;
+    gap: 60px;
 }
 /* Ajout css side_bar*/
 #size_board {
     font-size: 25px;
+    padding-top: 15px;
     padding-bottom: 40px;
 }
-
-#size_others {
-    padding: 10px;
+.size_others{
+    padding-bottom: 20px;
+    font-size: 17px;
+    gap: 10px;
 }
 #space{
     padding-top: 40px;
