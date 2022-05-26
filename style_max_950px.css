@@ -1,0 +1,80 @@
+
+
+div#top_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+}
+
+#side_bar {
+    position: static;
+    top: auto;
+    height: auto;
+    grid-column: 1 / 2;
+    grid-row: unset;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: unset;
+}
+#side_bar #size_board {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.size_others:nth-child(8) {
+    padding-top: unset;
+}
+
+
+
+/* Ajout css Header */
+#header_bar {
+    position: static;
+    top: auto;
+    grid-column: 1 / 2;
+    grid-row: unset;
+}
+#header_bar #hearder_user_bar {
+    grid-template-columns: auto;
+    gap: 10px;
+}
+#header_bar #input_search {
+    padding: 7px;
+    background-color: rgb(226, 232, 240);
+    border: none;
+    border-radius: 14px;
+    width: 70vw;
+}
+#header_bar #welcome_profil {
+    display: none;
+}
+#header_bar #hearder_shotcut_bar {
+    grid-template-columns: auto;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* Ajout css my_body */
+#my_body {
+    grid-column: 1 / 2;
+    grid-row: unset;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+#parent {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+}
+
+
+
+#my_body #information {
+    grid-column: 1 / 2;
+    grid-template-rows: unset;
+    grid-template-columns: 1fr;
+}
+#my_body #announcement, #my_body #trending {
+    grid-row: unset;
+}

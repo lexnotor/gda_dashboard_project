@@ -19,6 +19,9 @@ body, html {
     padding: 0px;
     font-family: "Roboto", sans-serif;
 }
+* {
+    transition: .5s;
+}
 hr {
     border: 1px solid rgba(99, 99, 99, 0.435);
     border-top: 0px;
@@ -26,7 +29,7 @@ hr {
 div#top_container {
     display: grid;
     grid-template-columns: minmax(17%, 220px) auto;
-    grid-template-rows: 150px auto;
+    grid-template-rows: auto auto;
     padding: 0px;
     margin: 0px;
     min-height: 100vh;
@@ -46,6 +49,9 @@ div#top_container {
     gap: 60px;
 }
 /* Ajout css side_bar*/
+#side_bar > div:hover {
+    color: rgb(117, 226, 248);
+}
 #size_board {
     font-size: 25px;
     padding-top: 15px;
@@ -56,7 +62,7 @@ div#top_container {
     font-size: 17px;
     gap: 10px;
 }
-#space{
+.size_others:nth-child(8){
     padding-top: 40px;
 }
 /* Ajout css Header */
@@ -66,28 +72,29 @@ div#top_container {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     background-color: white;
-    padding: 15px 30px 0px 30px;
+    padding: 15px 30px 15px 30px;
     box-shadow: 0px 1px 2px rgb(212, 212, 212);;
     z-index: 9;
 }
 #header_bar .mdi-magnify {
     font-size: 20px;
 }
+#header_bar #hearder_user_bar {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
 #header_bar #input_search {
     padding: 7px;
     background-color: rgb(226, 232, 240);
     border: none;
     border-radius: 14px;
-    width: 70%;
-}
-#header_bar #hearder_user_bar {
-    display: grid;
-    grid-template-columns: 70% 25%;
-    justify-content: space-between;
+    width: 40vw;
 }
 #header_bar #noctification {
     display: grid;
     grid-template-columns: repeat(3, auto);
+    column-gap: 15px;
     justify-content: space-between;
     align-items: center;
 }
@@ -99,7 +106,7 @@ div#top_container {
     font-size: large;
 }
 #header_bar .small_avatar {
-    width: 50px;
+    width: 40px;
 }
 #header_bar #hearder_shotcut_bar {
     display: grid;
@@ -123,7 +130,7 @@ div#top_container {
 }
 #header_bar .meddium_avatar {
     grid-row: 1 / 3;
-    width: 60px;
+    width: 50px;
     margin-right: 20px;
 }
 #header_bar #shotcut_nav {
@@ -139,6 +146,10 @@ div#top_container {
     color: white;
     border-radius: 20px;
 } 
+#shotcut_nav > span:hover {
+    color: rgb(95, 166, 204);
+    background-color: rgb(250, 250, 250);
+} 
 #shotcut_nav > span:last-of-type {
     margin: 0px 0px;
 }
@@ -149,7 +160,7 @@ div#top_container {
     grid-row: 2 / 3;
     background-color: rgb(226, 232, 240);
     display: grid;
-    grid-template-columns: 65% 25%;
+    grid-template-columns: 70% 25%;
     justify-content: space-around;
     padding-bottom: 30px;
 }
